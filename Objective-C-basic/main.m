@@ -16,10 +16,10 @@ int main(int argc, const char * argv[]) {
                 scanf("%lf", &first);
         printf("Second number: ");
                 scanf("%lf", &second);
-        NSLog(@"Addition of numbers - %.f", first + second);
-        NSLog(@"Substraction of numbers - %.f", first - second);
-        NSLog(@"Divisions of numbers - %.1f", first / second);
-        NSLog(@"Multiplication of numbers - %.f", first * second);
+        NSLog(@"+  Addition of numbers - %.f", first + second);
+        NSLog(@"-  Substraction of numbers - %.f", first - second);
+        NSLog(@"/  Divisions of numbers - %.1f", first / second);
+        NSLog(@"*  Multiplication of numbers - %.f", first * second);
     }
     return 0;
 }
