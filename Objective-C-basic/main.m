@@ -6,14 +6,22 @@
 //
 
 #import <Foundation/Foundation.h>
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        NSArray *strings= [NSArray arrayWithObjects: @"first", @"secord", @"third", nil];
-        for (NSString *string in strings) {
-            NSLog(@"%@", string);
-        }
-           }
+const int ID = 1;
+struct TransistorRec {
+    char name[ID];
+   };
+int main()
+{
+    typedef struct TransistorRec Transistor;
+    int total,i;
+    struct TransistorRec a[10];
+    printf("How many name user?  ");
+    scanf("%i",&total);
+    for ( i = 0; i <total; i++){
+        printf("Enter please name use :\n");
+        scanf("%s",a[i].name);
+          }
     return 0;
- }
- 
+}
+
 
