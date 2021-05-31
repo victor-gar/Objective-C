@@ -1,4 +1,4 @@
-//
+
 //  main.m
 //  Objective-C-basic
 //
@@ -6,22 +6,22 @@
 //
 
 #import <Foundation/Foundation.h>
-const int ID = 1;
-struct TransistorRec {
-    char name[ID];
+const int ID = 30;
+struct Human{
+char name[ID];
+int age;
    };
 int main()
 {
-    typedef struct TransistorRec Transistor;
+    typedef struct Human User;
     int total,i;
-    struct TransistorRec a[10];
+    struct Human a[10];
     printf("How many name user?  ");
     scanf("%i",&total);
     for ( i = 0; i <total; i++){
-        printf("Enter please name use :\n");
-        scanf("%s",a[i].name);
+        printf("Enter please name , age user\n");
+        scanf("%s %i",a[i].name,&a[i].age);
           }
     return 0;
 }
-
 
